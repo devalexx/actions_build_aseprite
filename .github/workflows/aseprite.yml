@@ -55,6 +55,7 @@ jobs:
       with:
         path: Aseprite-win-x64.zip
   build-linux:
+    if: false
     runs-on: 	ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -107,6 +108,7 @@ jobs:
         with:
           path: Aseprite-ubuntu_amd64.deb
   build-macos:
+    if: false
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
